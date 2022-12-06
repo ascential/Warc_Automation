@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/AutomationSpecflow/v17/TestStore/0
+/.vs/AutomationSpecflow/v17
+/.vs/VSWorkspaceState.json
+/.vs/slnx.sqlite
+/UIProjectWarc/.vs/UIProjectWarc
+/UIProjectWarc/UIProjectWarc/bin/Debug/net6.0
+/UIProjectWarc/UIProjectWarc/obj/Debug/net6.0
+/UIProjectWarc/UIProjectWarc/obj/Release/net6.0
+/UIProjectWarc/UIProjectWarc/obj
