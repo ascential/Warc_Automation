@@ -74,13 +74,13 @@ namespace UIProjectWarc.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Check Warc guide")]
-        public virtual void CheckWarcGuide()
+        [NUnit.Framework.DescriptionAttribute("Future of strategy")]
+        public virtual void FutureOfStrategy()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check Warc guide", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 177
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Future of strategy", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 199
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -100,23 +100,17 @@ namespace UIProjectWarc.Features
             else
             {
                 this.ScenarioStart();
-#line 178
+#line 200
  testRunner.Given("Im a customer on Warc UI", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 179
+#line 201
  testRunner.When("I enter my username and password", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 180
-    testRunner.And("im on the best practice page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 202
+ testRunner.And("im on the future of strategy", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 181
- testRunner.And("i click on what we know about", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 182
- testRunner.Then("warcs series of what we know about is displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 183
- testRunner.And("i click on whats working in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 203
+ testRunner.Then("the lastest report strategist interviews text are displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
