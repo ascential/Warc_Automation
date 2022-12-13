@@ -402,7 +402,49 @@ namespace UIProjectWarc.StepDefinitions
         [Then(@"all report are displayed")]
         public void ThenAllReportAreDisplayed()
         {
-            throw new PendingStepException();
+            warcSmokeTestPage.WhatsWorkingIsDisplayed();
+        }
+        [When(@"im on warc research page")]
+        public void WhenImOnWarcResearchPage()
+        {
+            warcSmokeTestPage.SwitchToResearchPage();
+        }
+
+        [Then(@"WARC Research content items are displayed\.")]
+        public void ThenWARCResearchContentItemsAreDisplayed_()
+        {
+            warcSmokeTestPage.ReasearchList();
+        }
+
+        [Then(@"Reference link to Journal of Advertising Research is displayed")]
+        public void ThenReferenceLinkToJournalOfAdvertisingResearchIsDisplayed()
+        {
+            warcSmokeTestPage.ClickJournalWebsite();
+            Assert.True(warcSmokeTestPage.JournalAdvertisingLoginIsDisplayed());
+        }
+
+        [When(@"im on the strategy-toolkit")]
+        public void WhenImOnTheStrategy_Toolkit()
+        {
+            warcSmokeTestPage.SwitchToStrategyToolkitPage();
+        }
+
+        [Then(@"the various modules of marketing strategy appears")]
+        public void ThenTheVariousModulesOfMarketingStrategyAppears()
+        {
+            Assert.True(warcSmokeTestPage.ModulesMarketingStrategyList());
+        }
+
+        [When(@"im on the future of strategy")]
+        public void WhenImOnTheFutureOfStrategy()
+        {
+            warcSmokeTestPage.SwitchToFutureStrategyPage();
+        }
+
+        [Then(@"the lastest report strategist interviews text are displayed")]
+        public void ThenTheLastestReportStrategistInterviewsTextAreDisplayed()
+        {
+            Assert.True(warcSmokeTestPage.FutureStrategyTxt());
         }
 
     }

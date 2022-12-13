@@ -6,7 +6,7 @@ A short summary of the feature
 #   Given Im a customer on Warc UI
 #	When i click on find out more
 #   Then The WARC Consumer trends Report Coping in an era of serial crises is displayed
-#
+
 #Scenario: verify the link for signup
 #	Given Im a customer on Warc UI
 #	When i click on the signup link
@@ -174,14 +174,33 @@ A short summary of the feature
 	#And i click on webinars
 	#Then lastest webinars is displayed
 #
-	Scenario: Check Warc guide
-	Given Im a customer on Warc UI
-	When I enter my username and password
-    And im on the best practice page
-	And i click on what we know about 
-	Then warcs series of what we know about is displayed
-	And i click on whats working in
+	#Scenario: Check Warc guide
+	#Given Im a customer on Warc UI
+	#When I enter my username and password
+ #   And im on the best practice page
+	#And i click on what we know about 
+	#Then warcs series of what we know about is displayed
+	#And i click on whats working in
 	#Then all report are displayed
 
+	#Scenario: check that tabs Podcast and Webinars appear on the page, in the tabs respectively individual podcasts and webinars are displayed.
+	#Given Im a customer on Warc UI
+	#When I enter my username and password
+ #   And im on warc research page
+	#Then WARC Research content items are displayed.
+	#Then Reference link to Journal of Advertising Research is displayed
+	# 
+	#Scenario: Strategy toolkit 
+	#Given Im a customer on Warc UI
+	#When I enter my username and password
+	#And im on the strategy-toolkit
+	#Then the various modules of marketing strategy appears
+
+	Scenario: Future of strategy 
+	Given Im a customer on Warc UI
+	When I enter my username and password
+	And im on the future of strategy
+	Then the lastest report strategist interviews text are displayed
+    
 
 	

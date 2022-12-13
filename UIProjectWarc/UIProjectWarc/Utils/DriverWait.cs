@@ -54,5 +54,6 @@ d => ((IJavaScriptExecutor)driver).ExecuteScript("return document.readyState").E
            
             wait.Until(d => (bool)((IJavaScriptExecutor)driver).ExecuteScript("return jQuery.active == 0"));
         }
+        
     }
 }

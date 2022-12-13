@@ -80,6 +80,12 @@ namespace UIProjectWarc.Pages
         private By whatWeKnow = By.XPath("//h3[text()='What We Know About']");
         private By partnerAwardsText = By.XPath("//h1[text()='Partner award case studies']");
         private By whatsWorkingIn = By.XPath("//a[@href='#wwi']");
+        private By whatsWorkingInTxt = By.XPath("//*[@id='wwi']/div/h3");
+        private By reasearchList = By.XPath("//div[@class='tile-content tile-content-matched']");
+        private By journalWebsite = By.XPath("//a[@href='http://www.journalofadvertisingresearch.com/']");
+        private By journalLogin = By.XPath("//a[text()='Log in']");
+        private By strategyModules = By.XPath("//div[@class='containing-box-links tile-endbutton w-100']");
+        private By strategyTxt = By.XPath("//div[@class='container-fluid']/ul/li");
         public WarcSmokeTestPage(IWebDriver driver)
         {
             _driver = driver;
@@ -583,6 +589,90 @@ namespace UIProjectWarc.Pages
             driverWait.WaitForElementToBeDisplayed(whatsWorkingIn);
             _driver.FindElement(whatsWorkingIn).Click();
         }
+        public bool WhatsWorkingIsDisplayed()
+        {
+            driverWait.WaitForElementToBeDisplayed(whatsWorkingInTxt);
+            return _driver.FindElement(whatsWorkingIn).Displayed;
+        }
+        public void SwitchToResearchPage()
+        {
+            _helperClass.SwitchToTab2("/research");
+        }
+
+        public void ReasearchList()
+        {
+            var element = _driver.FindElements(reasearchList);
+            
+            List<string> error= new List<string>();
+            for (int i = 0; i < element.Count; i++)
+            {
+                
+                if (element.Count!=9)
+                {
+                    error.Add(element.ElementAt(i).Text);
+                }
+            }
+
+        }
+
+        public void ClickJournalWebsite()
+        {
+            var element = _driver.FindElement(journalWebsite);
+            ((IJavaScriptExecutor)_driver).ExecuteScript("arguments[0].scrollIntoView(true);", element);
+            Thread.Sleep(500);
+            element.Click();
+        }
+        public bool JournalAdvertisingLoginIsDisplayed()
+        {
+            driverWait.WaitForElementToBeDisplayed(journalLogin);
+            return _driver.FindElement(journalLogin).Displayed;
+        }
+        public void SwitchToStrategyToolkitPage()
+        {
+            _helperClass.SwitchToTab2("/strategy-toolkit");
+        }
+
+        public bool ModulesMarketingStrategyList()
+        {
+            Thread.Sleep(5000);
+            var element = _driver.FindElements(strategyModules);
+
+            List<string> error = new List<string>();
+            for (int i = 0; i < element.Count; i++)
+            {
+
+                if (element.Count != 8)
+                {
+                    error.Add(element.ElementAt(i).Text);
+                }
+            }
+            return element.Count > 0;
+
+        }
+        public void SwitchToFutureStrategyPage()
+        {
+            _helperClass.SwitchToTab2("/future-of-strategy");
+        }
+
+        public bool FutureStrategyTxt()
+        {
+            Thread.Sleep(5000);
+            var element = _driver.FindElements(strategyTxt);
+
+            List<string> error = new List<string>();
+            for (int i = 0; i < element.Count; i++)
+            {
+
+                if (element.Count != 3)
+                {
+                    error.Add(element.ElementAt(i).Text);
+                }
+            }
+            return element.Count > 0;
+
+        }
+
     }
+     
     }
 
