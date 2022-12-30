@@ -23,7 +23,7 @@ namespace RestSharpAPI.APIMethods
 
         public void GetRequest()
         {
-            
+            //
             var client = new RestClient(base_URI);
             //client.Timeout = -1;
             var request = new RestRequest("booking/1", Method.Get);
