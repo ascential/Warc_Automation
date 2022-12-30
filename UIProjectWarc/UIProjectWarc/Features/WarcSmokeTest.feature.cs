@@ -74,13 +74,13 @@ namespace UIProjectWarc.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Future of strategy")]
-        public virtual void FutureOfStrategy()
+        [NUnit.Framework.DescriptionAttribute("Pitch Support")]
+        public virtual void PitchSupport()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Future of strategy", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 199
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Pitch Support", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 205
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -100,17 +100,23 @@ namespace UIProjectWarc.Features
             else
             {
                 this.ScenarioStart();
-#line 200
+#line 206
  testRunner.Given("Im a customer on Warc UI", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 201
+#line 207
  testRunner.When("I enter my username and password", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 202
- testRunner.And("im on the future of strategy", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 208
+ testRunner.And("im on pitch support page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 203
- testRunner.Then("the lastest report strategist interviews text are displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 209
+ testRunner.And("i click on start the pitch builder", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 210
+ testRunner.Then("i land on the pitch builder page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 211
+ testRunner.When("I click on new business guide", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
             }
             this.ScenarioCleanup();

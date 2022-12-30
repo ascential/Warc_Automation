@@ -86,6 +86,9 @@ namespace UIProjectWarc.Pages
         private By journalLogin = By.XPath("//a[text()='Log in']");
         private By strategyModules = By.XPath("//div[@class='containing-box-links tile-endbutton w-100']");
         private By strategyTxt = By.XPath("//div[@class='container-fluid']/ul/li");
+        private By PitchBuilder = By.XPath("//a[@href='/pitchsupport/pitchbuilder']");
+        private By pitchBuilderTxt = By.XPath("//h1[text()='Pitch Builder']");
+        private By newBusinessGuide = By.XPath("//a[@href='/new-business-guide.info']");
         public WarcSmokeTestPage(IWebDriver driver)
         {
             _driver = driver;
@@ -670,6 +673,25 @@ namespace UIProjectWarc.Pages
             }
             return element.Count > 0;
 
+        }
+        public void SwitchToPitchSupportPage()
+        {
+            _helperClass.SwitchToTab2("/pitch-support");
+        }
+
+        public void ClickPitchBuilder()
+        {
+            _driver.FindElement(PitchBuilder).Click();
+        }
+        public bool PitchBuilderTextIsDisplayed()
+        {
+            Thread.Sleep(5000);
+            driverWait.WaitForElementToBeDisplayed(pitchBuilderTxt);
+            return _driver.FindElement(pitchBuilderTxt).Displayed;
+        }
+        public void ClickNewBusinessGuide()
+        {
+            _helperClass.SwitchToTab2("/pitch-support");
         }
 
     }
