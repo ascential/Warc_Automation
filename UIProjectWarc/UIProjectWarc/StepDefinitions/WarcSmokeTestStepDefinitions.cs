@@ -446,6 +446,35 @@ namespace UIProjectWarc.StepDefinitions
         {
             Assert.True(warcSmokeTestPage.FutureStrategyTxt());
         }
+        [When(@"im on pitch support page")]
+        public void WhenImOnPitchSupportPage()
+        {
+            warcSmokeTestPage.SwitchToPitchSupportPage();
+        }
+
+        [When(@"i click on start the pitch builder")]
+        public void WhenIClickOnStartThePitchBuilder()
+        {
+            warcSmokeTestPage.ClickPitchBuilder();
+        }
+
+        [Then(@"i land on the pitch builder page")]
+        public void ThenILandOnThePitchBuilderPage()
+        {
+            Assert.True(warcSmokeTestPage.PitchBuilderTextIsDisplayed());
+        }
+
+        [When(@"I click on new business guide")]
+        public void WhenIClickOnNewBusinessGuide()
+        {
+            throw new PendingStepException();
+        }
+
+        [Then(@"i land on the new business guide page")]
+        public void ThenILandOnTheNewBusinessGuidePage()
+        {
+            throw new PendingStepException();
+        }
 
     }
 

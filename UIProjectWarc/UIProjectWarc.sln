@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIProjectWarc", "UIProjectWarc\UIProjectWarc.csproj", "{562751C5-BE74-4DE5-8EDF-F6EB178BFF28}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UIProjectWarc", "UIProjectWarc\UIProjectWarc.csproj", "{562751C5-BE74-4DE5-8EDF-F6EB178BFF28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestSharpAPI", "RestSharpAPI\RestSharpAPI.csproj", "{35F5FAC8-3203-45C1-AE3E-CF991A23D915}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{562751C5-BE74-4DE5-8EDF-F6EB178BFF28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{562751C5-BE74-4DE5-8EDF-F6EB178BFF28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{562751C5-BE74-4DE5-8EDF-F6EB178BFF28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35F5FAC8-3203-45C1-AE3E-CF991A23D915}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35F5FAC8-3203-45C1-AE3E-CF991A23D915}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35F5FAC8-3203-45C1-AE3E-CF991A23D915}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35F5FAC8-3203-45C1-AE3E-CF991A23D915}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

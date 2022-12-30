@@ -196,11 +196,19 @@ A short summary of the feature
 	#And im on the strategy-toolkit
 	#Then the various modules of marketing strategy appears
 
-	Scenario: Future of strategy 
+	#Scenario: Future of strategy 
+	#Given Im a customer on Warc UI
+	#When I enter my username and password
+	#And im on the future of strategy
+	#Then the lastest report strategist interviews text are displayed
+    
+	Scenario: Pitch Support 
 	Given Im a customer on Warc UI
 	When I enter my username and password
-	And im on the future of strategy
-	Then the lastest report strategist interviews text are displayed
-    
+	And im on pitch support page
+	And i click on start the pitch builder
+	Then i land on the pitch builder page
+	When I click on new business guide
+	#Then i land on the new business guide page
 
 	
